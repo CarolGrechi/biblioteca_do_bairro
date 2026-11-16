@@ -1,0 +1,9 @@
+# Ficheiros temporários
+*.tmp
+*.log
+
+# Pastas de dependências
+node_modules/
+
+# Configurações locais
+.env
