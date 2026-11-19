@@ -1,174 +1,240 @@
 
-/* Biblioteca do Bairro - 2026 */
+/* 🌷 Biblioteca do Bairro — Pastel Edition 🌷 */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+
+:root {
+    --rosa: #f8dde8;
+    --rosa-claro: #fceef3;
+    --lilas: #e9ddf7;
+    --creme: #fff9f6;
+    --menta: #dcefe5;
+    --branco: #ffffff;
+    --texto: #79536f;
+    --texto-suave: #806b7a;
+    --borda: #f0dce7;
+    --destaque: #a77b99;
+}
 
 * {
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    background-color: #fff8f0;
-    color: #23395b;
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+    background: var(--creme);
+    color: var(--texto-suave);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* 🎀 Cabeçalho */
+
 header {
-    background: linear-gradient(135deg, #23395b, #406e8e);
-    color: white;
-    padding: 3rem 2rem;
+    background: linear-gradient(
+        135deg,
+        #f8dde8 0%,
+        #f5e6f5 55%,
+        #e9ddf7 100%
+    );
+    padding: 65px 20px 40px;
     text-align: center;
+    border-bottom: 4px solid white;
+}
+
+h1, h2, h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--texto);
 }
 
 h1 {
-    font-family: Georgia, serif;
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    margin: 0 0 12px;
+    font-weight: 700;
 }
 
-h2, h3 {
-    color: #23395b;
-    font-family: Georgia, serif;
+header h1::before {
+    content: "♡ ";
 }
 
-header h1 {
-    color: white;
+header h1::after {
+    content: " ♡";
 }
 
 .destaque {
-    font-size: 1.2rem;
-    font-weight: bold;
+    color: var(--texto);
+    font-size: 1.1rem;
+    font-weight: 500;
 }
+
+/* 🌸 Menu */
 
 nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    gap: 12px;
+    margin-top: 30px;
 }
 
 nav a {
-    color: white;
+    background: rgba(255, 255, 255, 0.75);
+    color: var(--texto);
+    padding: 10px 22px;
+    border-radius: 30px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #f2cc8f;
-    text-decoration: underline;
+    background: white;
+    color: var(--destaque);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px #d6a6c255;
 }
 
+/* 🧁 Conteúdo */
+
 main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2rem;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 section {
-    background-color: white;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgb(0 0 0 / 0.08);
+    background: var(--branco);
+    padding: 35px;
+    margin-bottom: 28px;
+    border: 1px solid var(--borda);
+    border-radius: 24px;
+    box-shadow: 0 8px 25px #d9b8c51a;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-top: 0;
+}
+
+h2::before {
+    content: "✿ ";
+    color: #dba8bf;
+}
+
+h3 {
+    font-size: 1.15rem;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+strong {
+    color: var(--texto);
 }
 
 a {
-    color: #245b80;
+    color: #ad7798;
 }
 
 a:hover {
-    color: #b34d35;
+    color: #8c5b80;
+}
+
+ul, ol {
+    padding-left: 25px;
+}
+
+li {
+    padding: 4px 0;
+}
+
+li::marker {
+    color: #dba8bf;
 }
 
 li:first-child {
-    font-weight: bold;
+    font-weight: 600;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-}
-
-caption {
-    font-weight: bold;
-    margin-bottom: 0.75rem;
-}
-
-th, td {
-    border: 1px solid #d8d8d8;
-    padding: 0.75rem;
-    text-align: left;
-}
-
-thead {
-    background-color: #23395b;
-    color: white;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f4f7fa;
-}
+/* 🍓 Cartões */
 
 .cartoes {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 20px;
 }
 
 .cartao {
     flex: 1 1 220px;
-    padding: 1.5rem;
-    border: 1px solid #e5ded3;
-    border-left: 6px solid #e07a5f;
-    border-radius: 12px;
-    background-color: #fffaf4;
-    box-shadow: 0 4px 12px rgb(0 0 0 / 0.08);
+    background: var(--rosa-claro);
+    border: 1px solid var(--borda);
+    border-radius: 20px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.cartao:nth-child(2) {
+    background: #f1ebfa;
+}
+
+.cartao:nth-child(3) {
+    background: #eaf5ef;
+}
+
+.cartao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px #d9b8c540;
 }
 
 .cartao h3 {
     margin-top: 0;
 }
 
-footer {
-    background-color: #23395b;
-    color: white;
-    text-align: center;
-    padding: 2rem;
+/* 📖 Tabelas */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 1px solid var(--borda);
 }
 
-footer a {
-    color: white;
+caption {
+    font-weight: 700;
+    color: var(--texto);
+    padding: 10px;
 }
 
-@media (max-width: 600px) {
-    header {
-        padding: 2rem 1rem;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    main {
-        padding: 1rem;
-    }
-
-    section {
-        padding: 1rem;
-    }
-
-    th, td {
-        padding: 0.4rem;
-        font-size: 0.85rem;
-    }
-
-    nav {
-        gap: 1rem;
-    }
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--borda);
 }
+
+thead {
+    background: var(--rosa);
+    color: var(--texto);
+}
+
+tbody tr:nth-child(even) {
+    background: #fff8fb;
+}
+
+tbody tr:last-child th,
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* 💌 Formulários */
 
 form {
     max-width: 600px;
@@ -176,7 +242,8 @@ form {
 }
 
 form label {
-    font-weight: bold;
+    color: var(--texto);
+    font-weight: 600;
 }
 
 input[type="text"],
@@ -184,45 +251,137 @@ input[type="email"],
 select,
 textarea {
     width: 100%;
-    padding: 0.8rem;
-    margin-top: 0.4rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    padding: 13px 16px;
+    margin-top: 6px;
+    background: #fffbfd;
+    border: 2px solid var(--borda);
+    border-radius: 14px;
+    color: var(--texto);
     font: inherit;
+    transition: 0.2s;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-    outline: 2px solid #406e8e;
-    outline-offset: 2px;
+    outline: none;
+    border-color: #d8a9c5;
+    box-shadow: 0 0 0 4px #f8dde880;
 }
 
 textarea {
     resize: vertical;
 }
 
-button {
-    background-color: #23395b;
-    color: white;
-    padding: 0.9rem 1.5rem;
+button,
+.botao {
+    display: inline-block;
+    background: var(--rosa);
+    color: var(--texto);
+    padding: 13px 28px;
     border: none;
-    border-radius: 8px;
+    border-radius: 30px;
     font: inherit;
-    font-weight: bold;
+    font-weight: 700;
+    text-decoration: none;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-button:hover {
-    background-color: #406e8e;
+button:hover,
+.botao:hover {
+    background: var(--lilas);
+    transform: translateY(-2px);
 }
 
-button:focus-visible {
-    outline: 3px solid #e07a5f;
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid var(--destaque);
     outline-offset: 3px;
 }
 
+/* 🗺️ Mapa e imagens */
+
 iframe {
     max-width: 100%;
-    border-radius: 12px;
+    border: none;
+    border-radius: 18px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--texto-suave);
+}
+
+/* 🌷 Rodapé */
+
+footer {
+    background: var(--lilas);
+    color: var(--texto);
+    padding: 35px 20px;
+    text-align: center;
+    border-top: 4px solid white;
+}
+
+footer a {
+    color: var(--texto);
+    font-weight: 600;
+}
+
+/* 📱 Telemóveis */
+
+@media (max-width: 600px) {
+    header {
+        padding: 45px 15px 30px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 22px;
+        border-radius: 18px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 8px 14px;
+        font-size: 0.9rem;
+    }
+
+    .cartoes {
+        flex-direction: column;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
 }
