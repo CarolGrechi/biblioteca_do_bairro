@@ -1,13 +1,125 @@
+
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
-    <title>Sobre a Biblioteca</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conhece a história, a missão e a equipa da Biblioteca do Bairro.">
+    <title>Sobre nós | Biblioteca do Bairro</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Sobre a Biblioteca do Bairro</h1>
-    <p>A nossa biblioteca é um espaço dedicado à leitura, aprendizagem e comunidade.</p>
 
-    <a href="index.html">Voltar à página inicial</a>
+    <header id="topo">
+        <h1>Sobre a Biblioteca</h1>
+        <p class="destaque">Um espaço de leitura, cultura e partilha.</p>
+
+        <nav aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="contactos.html">Contactos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>História</h2>
+            <p>
+                A <strong>Biblioteca do Bairro</strong> nasceu com o
+                objetivo de aproximar os livros da comunidade.
+            </p>
+            <p>
+                Desde a sua criação, tem sido um espaço de
+                <em>aprendizagem, descoberta e convívio</em>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Missão</h2>
+            <p>
+                A nossa missão é promover a leitura, facilitar o
+                acesso à informação e incentivar a aprendizagem
+                ao longo da vida.
+            </p>
+            <p>
+                Acreditamos que a cultura deve ser acessível
+                a <strong>todas as pessoas</strong>.
+            </p>
+        </section>
+
+        <section id="equipa">
+            <h2>Equipa</h2>
+            <p>
+                A nossa equipa organiza atividades culturais,
+                ajuda os leitores e cuida da coleção de livros.
+            </p>
+            <p>
+                Trabalhamos em colaboração com a
+                <abbr title="Câmara Municipal">CM</abbr>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Glossário da biblioteca</h2>
+
+            <dl>
+                <dt><strong>Leitor</strong></dt>
+                <dd>Pessoa inscrita na biblioteca.</dd>
+
+                <dt><strong>Empréstimo</strong></dt>
+                <dd>Serviço que permite levar livros para casa.</dd>
+
+                <dt><strong>Renovação</strong></dt>
+                <dd>Prolongamento do prazo de empréstimo.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Quotas anuais</h2>
+
+            <table>
+                <caption>Valores de inscrição</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Tipo de leitor</th>
+                        <th scope="col">Valor</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Estudante</th>
+                        <td>5 €</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Adulto</th>
+                        <td>10 €</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Até aos 12 anos: gratuito</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h2>Onde estamos</h2>
+            <p>
+                Rua das Flores, 12<br>
+                4700-123 Braga
+            </p>
+            <p><small>Morada fictícia para fins educativos.</small></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Biblioteca do Bairro</p>
+        <p><a href="#topo">Voltar ao topo</a></p>
+    </footer>
+
 </body>
 </html>
