@@ -1,0 +1,171 @@
+
+/* Biblioteca do Bairro - 2026 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff8f0;
+    color: #23395b;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #23395b, #406e8e);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2, h3 {
+    color: #23395b;
+    font-family: Georgia, serif;
+}
+
+header h1 {
+    color: white;
+}
+
+.destaque {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f2cc8f;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.08);
+}
+
+a {
+    color: #245b80;
+}
+
+a:hover {
+    color: #b34d35;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+th, td {
+    border: 1px solid #d8d8d8;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+thead {
+    background-color: #23395b;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f7fa;
+}
+
+.cartoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cartao {
+    flex: 1 1 220px;
+    padding: 1.5rem;
+    border: 1px solid #e5ded3;
+    border-left: 6px solid #e07a5f;
+    border-radius: 12px;
+    background-color: #fffaf4;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.08);
+}
+
+.cartao h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #23395b;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    th, td {
+        padding: 0.4rem;
+        font-size: 0.85rem;
+    }
+
+    nav {
+        gap: 1rem;
+    }
+}
