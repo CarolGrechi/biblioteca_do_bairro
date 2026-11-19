@@ -169,3 +169,60 @@ footer a {
         gap: 1rem;
     }
 }
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #406e8e;
+    outline-offset: 2px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #23395b;
+    color: white;
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #406e8e;
+}
+
+button:focus-visible {
+    outline: 3px solid #e07a5f;
+    outline-offset: 3px;
+}
+
+iframe {
+    max-width: 100%;
+    border-radius: 12px;
+}
