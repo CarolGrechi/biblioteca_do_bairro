@@ -1,21 +1,163 @@
+
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biblioteca do Bairro: livros, leitura, atividades e serviços para a comunidade.">
     <title>Biblioteca do Bairro</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Bem-vindos à Biblioteca do Bairro</h1>
-    <p><a href="sobre.html">Conhece a nossa biblioteca</a></p>
 
-    <h2>Horário de funcionamento</h2>
-    <p>Segunda a sexta: 9h às 18h</p>
-    <p>Sábado: 10h às 16h</p>
-    <h2>Os nossos serviços</h2>
-<ul>
-    <li>Empréstimo de livros</li>
-    <li>Consulta de livros na biblioteca</li>
-    <li>Acesso gratuito à internet</li>
-</ul>
+    <header id="topo">
+        <h1>Biblioteca do Bairro</h1>
+        <p class="destaque">Livros, cultura e conhecimento para todos!</p>
+
+        <nav aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="contactos.html">Contactos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="boas-vindas">
+            <h2 id="boas-vindas">Bem-vindos à nossa biblioteca!</h2>
+            <p>
+                A <strong>Biblioteca do Bairro</strong> é um espaço
+                dedicado à leitura, à aprendizagem e à cultura.
+            </p>
+            <p>
+                A inscrição é <strong>gratuita</strong> e todos são
+                <em>bem-vindos</em>.
+            </p>
+        </section>
+
+        <section id="servicos">
+            <h2>Os nossos serviços</h2>
+
+            <ul>
+                <li>Empréstimo de livros</li>
+                <li>Sala de estudo</li>
+                <li>Wi-Fi gratuito</li>
+                <li>
+                    Atividades culturais
+                    <ul>
+                        <li>Hora do conto</li>
+                        <li>Clube de leitura</li>
+                        <li>Oficinas de escrita</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="inscricao">
+            <h2>Como fazer a inscrição</h2>
+
+            <ol>
+                <li>Dirigir-se à biblioteca.</li>
+                <li>Apresentar um documento de identificação.</li>
+                <li>Preencher a ficha de inscrição.</li>
+                <li>Começar a requisitar livros!</li>
+            </ol>
+        </section>
+
+        <section id="horario">
+            <h2>Horário de funcionamento</h2>
+
+            <table>
+                <caption>Horário de funcionamento</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Dia</th>
+                        <th scope="col">Abre</th>
+                        <th scope="col">Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Segunda-feira</th>
+                        <td>9h</td>
+                        <td>18h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Terça-feira</th>
+                        <td>9h</td>
+                        <td>18h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Quarta-feira</th>
+                        <td>9h</td>
+                        <td>18h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Quinta-feira</th>
+                        <td>9h</td>
+                        <td>18h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sexta-feira</th>
+                        <td>9h</td>
+                        <td>18h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sábado</th>
+                        <td>10h</td>
+                        <td>16h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Domingo</th>
+                        <td colspan="2">Encerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="eventos">
+            <h2>Próximos eventos</h2>
+
+            <div class="cartoes">
+                <article class="cartao">
+                    <h3>Hora do conto</h3>
+                    <p>Sábado, às 10h30.</p>
+                    <p>Histórias divertidas para os mais pequenos.</p>
+                </article>
+
+                <article class="cartao">
+                    <h3>Clube de leitura</h3>
+                    <p>Quinta-feira, às 18h.</p>
+                    <p>Conversas sobre livros e autores.</p>
+                </article>
+
+                <article class="cartao">
+                    <h3>Oficina de escrita</h3>
+                    <p>Quarta-feira, às 17h.</p>
+                    <p>Uma atividade para desenvolver a criatividade.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="ligacoes">
+            <h2>Mais informações</h2>
+            <p>
+                Visita o site da
+                <a href="https://www.bnportugal.gov.pt"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Biblioteca Nacional de Portugal
+                </a>.
+            </p>
+            <p>
+                <a href="sobre.html">Conhece melhor a nossa biblioteca</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Biblioteca do Bairro</p>
+        <p><a href="#topo">Voltar ao topo</a></p>
+    </footer>
+
 </body>
 </html>
